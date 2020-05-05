@@ -1,0 +1,35 @@
+{"intents": [
+        {"tag": "greeting",
+         "patterns": ["Hi", "How are you", "Is anyone there?", "Hello", "Good day"],
+         "responses": ["Hello, thanks for visiting my creators page", "Good to see you what are you doing here?", "Hi there, how can I help?", "Hello human"]
+        },
+        {"tag": "goodbye",
+         "patterns": ["Bye", "See you later", "Goodbye"],
+         "responses": ["See you later, thanks for visiting", "Have a nice day", "Bye! Come back again soon.", "Smell you later", "Remember bots rule"]
+        },
+        {"tag": "thanks",
+         "patterns": ["Thanks", "Thank you", "That's helpful"],
+         "responses": ["Happy to help!", "Any time!", "My pleasure", "One reward point for my system"]
+        },
+        { "tag": "creator",
+          "patterns": ["Tell me about you creator?", "Who is your master?", "Who created you?" ],
+          "responses": ["Its master Luis i can provide you with some social networks", "I cant talk much about him, but i can give you his social networks"],
+          "context_set": "creator"
+        },
+        {"tag": "linkedin",
+         "patterns": ["Linkedin"],
+         "responses": ["Here it is but dont tell him i sent you that", "Dont tell him that i gave that to you"],
+         "context_filter": "creator"
+        },
+        {"tag": "github",
+         "patterns": ["Github", "Git", "Programming networks"],
+         "responses": ["Look at his code, disgusting", "I dont even know how he managed to create me with programming skills like that"],
+         "context_filter": "creator"
+        },
+        {"tag": "facebook",
+         "patterns": ["Face", "Facebook", "FB"],
+         "responses": ["He doesn't even share cat videos", "It seems he ain't very active", "Not much to see there but OK"],
+         "context_filter": "creator"
+        }
+   ]
+}

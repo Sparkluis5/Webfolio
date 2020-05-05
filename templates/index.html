@@ -1,0 +1,335 @@
+<!doctype html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Webfolio - Welcome to my personal website</title>
+<!--
+Stacked Template
+http://www.templatemo.com/tm-505-stacked
+-->
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap-theme.min.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/templatemo-style.css') }}">
+
+        <script src="{{ url_for('static', filename='js/vendor/modernizr-2.8.3-respond-1.4.2.min.js') }}"></script>
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <nav class="nav">
+          <div class="burger">
+            <div class="burger__patty"></div>
+          </div>
+
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#1" class="nav__link c-blue"><img src="{{ url_for('static', filename='img/ipad.png')}}" alt=""></a>
+            </li>
+            <li class="nav__item">
+              <a href="#2" class="nav__link c-yellow scrolly"><img src="{{ url_for('static', filename='img/comment_bubble.png')}}" alt=""></a>
+            </li>
+            <li class="nav__item">
+              <a href="#3" class="nav__link c-red"><img src="{{ url_for('static', filename='img/folder.png')}}" alt=""></a>
+            </li>
+            <li class="nav__item">
+              <a href="#4" class="nav__link c-green"><img src="{{ url_for('static', filename='img/envelope.png')}}" alt=""></a>
+            </li>
+          </ul>
+        </nav>
+
+        <section class="panel b-blue" id="1">
+          <article class="panel__wrapper">
+            <div class="panel__content">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-8 col-md-offset-2">
+                    <div class="home-content">
+                      <div class="home-heading">
+                        <h1><em>Luis</em> little workshop</h1>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-12">
+                          <div class="home-box-content">
+                            <div class="left-text">
+                              <h4>About <em>Me</em> </h4>
+                              <p>Hello, im Luis and currently researching at CISUC and currently working on AIA. Don't understand this war between cat and dog persons, i perfer both.</p>
+                              <p>Previous works: </p>
+                              <ol>
+                                <li><a href="https://link.springer.com/chapter/10.1007/978-3-030-30244-3_59" target="_blank">Exploring Emojis for Emotion Recognition in Portuguese Text</a> </li>
+                                <li><a href="https://link.springer.com/chapter/10.1007/978-3-030-41505-1_17" target="_blank">Emoji Prediction for Portuguese</a> </li>
+                                <li><a href="https://revistas.rcaap.pt/millenium/article/view/14070" target="_blank"> Web application for the analysis of assessment tests</a> </li>
+                              </ol>
+                              <p>Also displaying my Master Thesis:</p>
+                              <ol>
+                                <li><a href="https://estudogeral.sib.uc.pt/bitstream/10316/88059/1/Tese_LuisDuarteFinal.pdf" target="_blank">Reconhecimento Autoḿatico de Emoç̃oes em texto com recurso a emojis</a> </li>
+                              </ol>
+                              <div class="primary-button">
+                                <a href="/LuisCV" target="_blank">Curriculum Vitae</a>
+                              </div>
+                            </div>
+                            <div class="right-image">
+                              <img src="{{ url_for('static', filename='img/right-home-image-fix.png')}}" alt="">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+        </section>
+        <section class="panel b-yellow" id="2">
+          <article class="panel__wrapper">
+            <div class="panel__content">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-8 col-md-offset-2">
+                    <div class="about-content">
+                      <div class="heading">
+                        <h4>AlBERTo</h4>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-12">
+                          <div class="about-box-content">
+                            <img src="{{ url_for('static', filename='img/alberto.png')}}" alt="">
+                          </div>
+                        </div>
+                        <div class="col-md-7 col-md-offset-5">
+                          <div class="about-box-text">
+                            <h4>Your not so friendly bot</h4>
+                            <p>alBERTo is a personal project of mine trying to mix emotion and sentiment recognition with question anwsering using BERT all in one system.</p>
+                            <div class="primary-button">
+                              <a href="/Alberto" target="_blank">Talk with him</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+        </section>
+        <section class="panel b-red" id="3">
+          <article class="panel__wrapper">
+            <div class="panel__content">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-8 col-md-offset-2">
+                    <div class="projects-content">
+                      <div class="heading">
+                        <h4>Past Projects</h4>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-12">
+                          <div class="owl-carousel owl-theme projects-container">
+                            <div>
+                              <div class="project-item">
+                                <a href="{{ url_for('static', filename='img/project-01.jpg')}}" data-lightbox="image-1"><img src="{{ url_for('static', filename='img/project-01.jpg')}}" alt=""></a>
+                                <div class="text-content">
+                                  <h4>Chatterbot IA </h4>
+                                  <p>A simple chatbot for helping you with your busy scheduales.</p>
+                                  <div class="primary-button">
+                                    <a href="https://github.com/Sparkluis5/chatterbotIA" target="_blank">GitHub Repo</a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div>
+                              <div class="project-item">
+                                <a href="{{ url_for('static', filename='img/project-02.jpg')}}" data-lightbox="image-1"><img src="{{ url_for('static', filename='img/project-02.jpg')}}" alt=""></a>
+                                <div class="text-content">
+                                  <h4>Emotion Movie Finder</h4>
+                                  <p>A web application for searching movies based on their sentiment or emotion.</p>
+                                  <div class="primary-button">
+                                    <a href="https://github.com/Sparkluis5/WebSem_EmoSentiMovieOnt" target="_blank">GitHub Repo</a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div>
+                              <div class="project-item">
+                                <a href="{{ url_for('static', filename='img/project-03.jpg')}}" data-lightbox="image-1"><img src="{{ url_for('static', filename='img/project-03.jpg')}}" alt=""></a>
+                                <div class="text-content">
+                                  <h4>Emotional Classifiers</h4>
+                                  <p>Several scripts for developing emotion classifers from text for Portuguese. Master thesis project.</p>
+                                  <div class="primary-button">
+                                    <a href="https://github.com/Sparkluis5/EmotionalEmojis-PT" target="_blank">GitHub Repo</a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div>
+                              <div class="project-item">
+                                <a href="{{ url_for('static', filename='img/project-04.jpg')}}" data-lightbox="image-1"><img src="{{ url_for('static', filename='img/project-04.jpg')}}" alt=""></a>
+                                <div class="text-content">
+                                  <h4>Reddit Data Creator</h4>
+                                  <p>Series of scripts for data extraction from Reddit with the purpose of dataset creation on users interactions.</p>
+                                  <div class="primary-button">
+                                    <a href="https://github.com/Sparkluis5/TwitterConversationalData" target="_blank">GitHub Repo</a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <!--<div>-->
+                              <!--<div class="project-item">-->
+                                <!--<a href="{{ url_for('static', filename='img/project-item-05.jpg')}}" data-lightbox="image-1"><img src="{{ url_for('static', filename='img/project-item-05.jpg')}}" alt=""></a>-->
+                                <!--<div class="text-content">-->
+                                  <!--<h4>Artwork</h4>-->
+                                  <!--<p>Lorem ipsum dolor, adipis scing elit etiam ante vehicula, aliquam mauris in, luctus neque.</p>-->
+                                  <!--<div class="primary-button">-->
+                                    <!--<a href="#">Discover More</a>-->
+                                  <!--</div>-->
+                                <!--</div>-->
+                              <!--</div>-->
+                            <!--</div>-->
+                            <!--<div>-->
+                              <!--<div class="project-item">-->
+                                <!--<a href="{{ url_for('static', filename='img/project-item-06.jpg')}}" data-lightbox="image-1"><img src="{{ url_for('static', filename='img/project-item-06.jpg')}}" alt=""></a>-->
+                                <!--<div class="text-content">-->
+                                  <!--<h4>Item Sixth</h4>-->
+                                  <!--<p>Lorem ipsum dolor, adipis scing elit etiam ante vehicula, aliquam mauris in, luctus neque.</p>-->
+                                  <!--<div class="primary-button">-->
+                                    <!--<a href="#">Discover More</a>-->
+                                  <!--</div>-->
+                                <!--</div>-->
+                              <!--</div>-->
+                            <!--</div>-->
+                            <div>
+                              <div class="project-item">
+                                <a href="{{ url_for('static', filename='img/project-05.jpg')}}" data-lightbox="image-1"><img src="{{ url_for('static', filename='img/project-05.jpg')}}" alt=""></a>
+                                <div class="text-content">
+                                  <h4>My Webfolio</h4>
+                                  <p>All files of this website built with Flask.</p>
+                                  <div class="primary-button">
+                                    <a href="https://github.com/Sparkluis5/Webfolio" target="_blank">GitHub Repo</a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+        </section>
+        <section class="panel b-green" id="4">
+          <article class="panel__wrapper">
+            <div class="panel__content">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-8 col-md-offset-2">
+                    <div class="contact-content">
+                      <div class="heading">
+                        <h4>Contact Me</h4>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-8">
+                          <div class="contat-form">
+                            {% with messages = get_flashed_messages() %}
+                              {% if messages %}
+                                {% for message in messages %}
+                                  <form id="contactnone" action = "/" action="" method="POST">
+                                    <fieldset>
+                                      <input name="name" type="text" class="form-control" id="namenone" placeholder="Your Name" required>
+                                    </fieldset>
+                                    <fieldset>
+                                      <input name="email" type="email" class="form-control" id="emailnone" placeholder="Email" required>
+                                    </fieldset>
+                                    <fieldset>
+                                      <textarea name="message" rows="6" class="form-control" id="messagenone" placeholder="Message" required></textarea>
+                                    </fieldset>
+                                    <fieldset>
+                                      <button type="submit" disabled name="submit_btn" id="form-submitnone" class="btn" value="btn">Message Sent</button>
+                                    </fieldset>
+                                  </form>
+                                {% endfor %}
+                              {% else %}
+                                <form id="contact" action = "/" action="" method="POST">
+                                  <fieldset>
+                                    <input name="name" type="text" class="form-control" id="name" placeholder="Your Name" required>
+                                  </fieldset>
+                                  <fieldset>
+                                    <input name="email" type="email" class="form-control" id="email" placeholder="Email" required>
+                                  </fieldset>
+                                  <fieldset>
+                                    <textarea name="message" rows="6" class="form-control" id="message" placeholder="Message" required></textarea>
+                                  </fieldset>
+                                  <fieldset>
+                                    <button type="submit" name="submit_btn" id="form-submit" class="btn" value="btn">Send Message</button>
+                                  </fieldset>
+                                </form>
+                              {% endif %}
+                            {% endwith %}
+                          </div>
+                        </div>
+                        <div class="col-md-4">
+                          <div class="more-info">
+                            {% with messages = get_flashed_messages() %}
+                              {% if messages %}
+                                {% for message in messages %}
+                                    <p>{{ message }}</p>
+                                    <p>Get in touch faster <br>
+                                      Send me an email or get in touch in LinkedIn or GitHub.
+                                      <em>
+                                        <div class="imgContainer">
+                                          <a href="https://www.linkedin.com/in/luis-duarte-3a5a64144/" target="_blank">
+                                            <img src="{{ url_for('static', filename='img/linkedin-logo.png')}}" alt="LinkedIn" height="75" width="75"></a>
+                                          <a href="https://github.com/Sparkluis5" target="_blank">
+                                            <img src="{{ url_for('static', filename='img/github-logo.png')}}" alt="Github" height="75" width="75"></a>
+                                        </div>
+                                    </em>
+                                {% endfor %}
+                              {% else %}
+                            <p>Want to get in touch with me? <br>
+                              Send me an email or get in touch in LinkedIn or GitHub.
+                              <em>
+                                  <div class="imgContainer">
+                                    <a href="https://www.linkedin.com/in/luis-duarte-3a5a64144/" target="_blank">
+                                      <img src="{{ url_for('static', filename='img/linkedin-logo.png')}}" alt="LinkedIn" height="75" width="75"></a>
+                                    <a href="https://github.com/Sparkluis5" target="_blank">
+                                      <img src="{{ url_for('static', filename='img/github-logo.png')}}" alt="Github" height="75" width="75"></a>
+                                  </div>
+                              </em>
+                              {% endif %}
+                            {% endwith %}
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="footer">
+                      <p>Last Updated &copy; April 2020 </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+        </section>
+      
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+
+        <script src="{{ url_for('static', filename='js/vendor/bootstrap.min.js')}}"></script>
+
+        <script src="{{ url_for('static', filename='js/plugins.js')}}"></script>
+        <script src="{{ url_for('static', filename='js/main.js')}}"></script>
+
+    </body>
+</html>
