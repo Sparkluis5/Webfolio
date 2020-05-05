@@ -16,3 +16,10 @@ All files of my personal website built using Python and Flask. Free usage, based
   - HTML documents of the website
 4. api.py: Flask Backend script for the website
 5. set_envariables.py: Script for setting variables necessary for backend implementation 
+
+# Instructions
+
+```
+python api.py
+acess 127.0.0.1:5000 on your browser
+```
