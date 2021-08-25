@@ -16,4 +16,4 @@ flask-unchained == 0.7.9
 nltk == 3.5
 
 # Webfolio/alberto/botCore.py: 3
-tensorflow == 2.1.0
+tensorflow == 2.5.1
